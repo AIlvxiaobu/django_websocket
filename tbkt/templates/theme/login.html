@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>欢迎登录河南同步课堂业务管理平台</title>
+<link href="/site_media/css/base.css" rel="stylesheet" type="text/css" />
+<link href="/site_media/css/login.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/site_media/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="/site_media/js/common.js"></script>
+</head>
+<body>
+	<div class="logintop">
+	    <span>欢迎登录河南同步课堂业务管理平台</span>
+	    <ul>
+		    <li><a href="/">回首页</a></li>
+	    </ul>
+    </div>
+    <div class="loginbody">
+	    <span class="systemlogo"></span>
+	    <div class="loginbox">
+		    <ul>
+	    <form onsubmit="return checklogin();" method="post" name="login" action="/login/">
+			{% csrf_token %}
+		    	<li class="loginuser"><input type="text" name="username" autocomplete="off"></li>
+		    	<li class="loginpwd"><input type="password" name="password" autocomplete="off"></li>
+				<li>
+					<input type="submit" value="登 录" class="loginbtn"></li>
+		    </form>
+		    </ul>
+	    </div>
+    </div>
+    <div class="loginbm">版权所有 2014</div>
+    <script language="javascript">
+    	function checklogin(){
+    		if(document.login.username.value==''){
+    			$.dialog.alert('请输入帐户');
+    			document.login.username.focus();
+    			return false
+    		}
+    		if (document.login.password.value==''){
+    			$.dialog.alert('请输入密码');
+    			document.login.password.focus();
+    			return false
+    		}
+    	}
+		$(function($){
+		    $('.loginbox').css({'position':'absolute','left':($(window).width()-692)/2});
+		    $(".loginbm").css({'top':$(document).height()-50});
+			$(window).resize(function(){
+		    	$('.loginbox').css({'position':'absolute','left':($(window).width()-692)/2});
+		    	$(".loginbm").css({'top':$(document).height()-50});
+		    })
+		});
+    </script>
+</body>
+
+</html>

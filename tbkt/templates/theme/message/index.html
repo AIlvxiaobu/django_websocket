@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <textarea class="form-control" id="chat-log" rows="20"></textarea><br/>
+  <input class="btn btn-success btn-block" id="chat-message-submit" type="button" onclick="Send()" value="发送"/>
+{% endblock %}
+
+{% block js %}
+<script>
+
+  $('#page_header').text('发布消息');
+  $('#page_header_descript').text('send message');
+  function Send() {
+      var msg = $('#chat-log').val();
+      $.post({
+          url: '/send_message/',
+          data: {'msg': msg},
+          success:function(r){alert(r)}
+      })
+  }
+</script>
+{% endblock %}

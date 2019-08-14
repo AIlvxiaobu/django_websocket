@@ -1,0 +1,55 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+body{font:12px/1.5 '\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',"Hiragino Kaku Gothic Pro","STXihei",Tahoma,Helvetica,Arial,sans-serif;color: #555;}
+h1,h2,h3,h4,h5,h6{*font-size:100%;font-weight:400;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul,li{list-style:none outside;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;}
+input,textarea,select,button{font-family:inherit;font-size:inherit;*font-size:100%;font-weight:inherit;resize:none;}
+input:text,input:password,textarea{border: 1px solid #B9CAD3;}
+button{cursor:pointer;}
+:focus{outline:0;}
+a{text-decoration:none;color: #555;}
+a:hover{text-decoration:none;}
+.clearfix { *zoom: 1; }
+.clearfix:after { display: block; height: 0; content: " "; clear: both; visibility: hidden; }
+#body{ background: #fff url(/site_media/images/leftbg.png) 0 0 repeat-y; }
+#head{height: 88px;background: url(/site_media/images/topbg.gif) 0 0 repeat-x;}
+#head ,#head a{color: #e9f2f7;}
+#head .left{float: left;}
+#head .right{float: right;padding-top: 18px;}
+#head .right li{padding-right: 30px;text-align: right;line-height: 27px;}
+
+#head .logo{margin: 10px 0 0 12px;}
+
+#leftNav{float: left;width: 186px;padding-right: 1px;}
+#leftNav dt{background-color: #D4E7F0;height: 35px;font-weight: bold;line-height: 35px;cursor: pointer;border-bottom: 1px solid #B9CAD3;}
+#leftNav dt i{float: left;height: 16px;width: 16px;margin: 10px 5px 0 10px;background-color: #ff0;background:url(/site_media/images/ico.png) 0 0 no-repeat;}
+#leftNav dt .ico1{background:url(/site_media/images/ico1.png) 0 0 no-repeat;}
+#leftNav dt .ico2{background:url(/site_media/images/ico2.png) 0 0 no-repeat;}
+#leftNav dt .ico3{background:url(/site_media/images/ico3.png) 0 0 no-repeat;}
+#leftNav dt .ico4{background:url(/site_media/images/ico4.png) 0 0 no-repeat;}
+#leftNav dt .ico5{background:url(/site_media/images/ico5.png) 0 0 no-repeat;}
+#leftNav dt .ico6{background:url(/site_media/images/ico6.png) 0 0 no-repeat;}
+#leftNav dt .ico7{background:url(/site_media/images/ico7.png) 0 0 no-repeat;}
+#leftNav dd{position: relative;*zoom:1;z-index:1;}
+#leftNav dd a i{position: absolute;right:0;top:10px;height:0;width:0;font-size:0;border-width: 5px;border-style: dashed solid dashed dashed;border-color: transparent #fff transparent transparent;display: none;}
+#leftNav dd a em{float: left;height:0;width:0;margin: 10px 5px 0 20px;font-size:0;border-width: 5px;border-style: dashed dashed dashed solid;border-color: transparent transparent transparent #000;}
+#leftNav dd a{display: block;height: 30px;line-height: 30px;border-left: 2px solid transparent}
+#leftNav dd a.on{background: #3EAFE0;color: #fff;border-color: #EA2020}
+#leftNav dd a.on i{display: block;}
+#leftNav dd a.on em{border-color: transparent transparent transparent #fff;}
+#right{overflow: hidden;*zoom: 1;}
+.right_position{line-height: 35px;border-bottom: 1px solid #d7e4ea;background-color: #edf6fa;}
+.right_position span{display: inline-block;*display: inline;*zoom: 1;border: 1px solid #ddd;padding: 0 10px;cursor: pointer;}
+.right_position .on{background-color: #fff;color: #222;font-weight: bold;border-top: 2px solid #66C9F3;line-height: 33px;height: 34px;}
+.right_position a,.right_position .on a{color: #66C9F3;margin-left: 5px;font-weight: normal;}
+.right_position var{padding: 0 5px;color: #66C9F3;}
+.right_position a:hover,.right_position var:hover{color: #f00;}
+
+#nopower{text-align: center;font-size: 14px;padding: 100px 0;}
+#nopower i{display: block;margin: 0 auto 15px;height: 48px;width: 37px;background: url(/site_media/images/nopower.png) 0 0 no-repeat;}
+#welcome{text-align: center;font-size: 22px;height: 78px;line-height: 78px;padding: 100px 0;}
+#welcome i{display: inline-block;*zoom: 1;height: 78px;width: 66px;margin: -5px 10px 0 0;background: url(/site_media/images/welcome.png) 0 0 no-repeat;vertical-align: middle;}
+.btn {display: inline-block;*zoom: 1;padding:5px 10px;color: #000000;font-size: 14px;font-weight: bolder;border-radius:3px;border: none; background: #fad42e;cursor: pointer;margin: 6px -1px;}
